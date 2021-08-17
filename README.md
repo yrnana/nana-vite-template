@@ -10,6 +10,10 @@
 - prettier
 - jest
 
+## other case
+
+- [react17 jsx transform](https://github.com/yrnana/nana-vite-template/tree/new-jsx-transform)
+
 ## checkpoint
 
 ### path alias
