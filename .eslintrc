@@ -3,6 +3,18 @@
   "ignorePatterns": ["node_modules"],
   "overrides": [
     {
+      "files": ["*.{js,ts}"],
+      "env": {
+        "node": true,
+        "es2021": true
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "prettier"
+      ]
+    },
+    {
       "files": ["src/**/*.ts?(x)"],
       "parserOptions": {
         "ecmaVersion": "latest",

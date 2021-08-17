@@ -2,6 +2,10 @@
   "name": "nana-vite-template",
   "description": "vite template",
   "version": "0.0.0",
+  "author": {
+    "name": "nana.na",
+    "url": "https://github.com/yrnana"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yrnana/nana-vite-template.git"
@@ -10,7 +14,10 @@
     "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "test": "jest"
+    "test": "jest --watch",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "type-check": "tsc -p tsconfig.json",
+    "format": "prettier --check \"./src/**/*.{js,ts,tsx,scss,json,html}\""
   },
   "dependencies": {
     "@emotion/react": "^11.4.1",
@@ -42,6 +49,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^4.11.0",
     "jest": "^27.0.6",
     "jest-watch-typeahead": "^0.6.4",
     "react-test-renderer": "^17.0.2",
