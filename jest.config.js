@@ -19,7 +19,7 @@ const config = {
       '<rootDir>/__mocks__/fileMock.js',
   },
   snapshotSerializers: ['@emotion/jest/serializer'], // for emotion snapshot
-  resetMocks: true, // to match CRA config
+  resetMocks: true, // to match CRA config,
 };
 
 module.exports = config;

@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Button from './Button';
 
-describe('Button', () => {
+describe('버튼', () => {
   it('이전 스냅샷과 일치한다.', () => {
     const { container } = render(<Button />);
     expect(container).toMatchSnapshot();
