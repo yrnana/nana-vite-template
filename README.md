@@ -59,15 +59,6 @@ const config = {
 }
 ```
 
-- `jest.config.js`
-
-```js
-const config = {
-  // ...
-  snapshotSerializers: ['@emotion/jest/serializer'],
-};
-```
-
 - `vite.config.ts`
 
 ```ts
@@ -77,6 +68,15 @@ const config = {
     jsxFactory: `jsx`,
     jsxInject: `import { jsx } from '@emotion/react'`,
   },
+};
+```
+
+- `jest.config.js`
+
+```js
+const config = {
+  // ...
+  snapshotSerializers: ['@emotion/jest/serializer'],
 };
 ```
 
