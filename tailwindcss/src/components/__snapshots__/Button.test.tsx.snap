@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`버튼 이전 스냅샷과 일치한다. 1`] = `
+<div>
+  <button
+    class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700"
+  />
+</div>
+`;

@@ -28,6 +28,12 @@
   - \- jest
   - \- babel
 
+### tailwindcss
+
+- default
+  - \- emotion
+  - \+ tailwindcss
+
 ## download template
 
 ```bash
@@ -37,4 +43,5 @@ degit yrnana/nana-vite-template/default my-vite-app
 degit yrnana/nana-vite-template/material-ui my-vite-app
 degit yrnana/nana-vite-template/new-jsx-transform my-vite-app
 degit yrnana/nana-vite-template/wo-jest my-vite-app
+degit yrnana/nana-vite-template/tailwindcss my-vite-app
 ```
