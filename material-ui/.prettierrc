@@ -1,0 +1,14 @@
+{
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "importOrder": [
+    "^react$",
+    "^react-dom$",
+    "^(?![.~]).*(?<!.css|.scss)$",
+    "^[.~].*(?<!.css|.scss)$",
+    "^(?![.~]).*$",
+    "^[.~].*",
+    ".*"
+  ]
+}

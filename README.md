@@ -1,89 +1,40 @@
 # nana-vite-template
 
-## library
+## template list
+
+### default
 
 - vite
 - react
-- babel
-- emotion
+- jest (+babel)
 - eslint
 - prettier
-- jest
+- emotion
 
-## other case
+### new jsx transform
 
-- [react17 jsx transform](https://github.com/yrnana/nana-vite-template/tree/new-jsx-transform)
+- default
+  - \+ react 17 new jsw transform
 
-## checkpoint
+### material-ui
 
-### path alias
+- default
+  - \- emotion
+  - \+ material-ui
 
-- `tsconfig.json`
+### wo-jest
 
-```json
-{
-  "baseUrl": ".",
-  "paths": {
-    "~/*": ["./src/*"]
-  }
-}
+- default
+  - \- jest
+  - \- babel
+
+## download template
+
+```bash
+npm i -g degit
+
+degit yrnana/nana-vite-template/default my-vite-app
+degit yrnana/nana-vite-template/material-ui my-vite-app
+degit yrnana/nana-vite-template/new-jsx-transform my-vite-app
+degit yrnana/nana-vite-template/wo-jest my-vite-app
 ```
-
-- `vite.config.ts`
-
-```ts
-const config = {
-  //...
-  resolve: {
-    alias: {
-      '~/': `${process.cwd()}/src/`,
-    },
-  },
-};
-```
-
-- `jest.config.js`
-
-```js
-const config = {
-  // ...
-  moduleNameMapper: {
-    '^~/(.*)$': '<rootDir>/src/$1',
-  },
-};
-```
-
-### emotion
-
-- `babel.config.json`
-
-```json
-{
-  "presets": ["@emotion/babel-preset-css-prop"]
-}
-```
-
-- `vite.config.ts`
-
-```ts
-const config = {
-  // ...
-  esbuild: {
-    jsxFactory: `jsx`,
-    jsxInject: `import { jsx } from '@emotion/react'`,
-  },
-};
-```
-
-- `jest.config.js`
-
-```js
-const config = {
-  // ...
-  snapshotSerializers: ['@emotion/jest/serializer'],
-};
-```
-
-### jest
-
-- ts -> js 변환 속도 리스크도 있고 `ts-node` 패키지 설치가 필수이므로 `jest.config.ts` 대신 `jest.config.js` 사용
