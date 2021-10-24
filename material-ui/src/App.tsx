@@ -1,4 +1,3 @@
-import React from 'react';
 import { GlobalStyles } from '@material-ui/core';
 import Button from '~/components/Button';
 
