@@ -8,17 +8,12 @@
         "node": true,
         "es2021": true
       },
-      "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "prettier"
-      ]
+      "extends": ["eslint:recommended", "prettier"]
     },
     {
       "files": ["src/**/*.ts?(x)"],
       "parserOptions": {
-        "ecmaVersion": "latest",
-        "project": "./tsconfig.json"
+        "ecmaVersion": "latest"
       },
       "settings": {
         "react": {
@@ -33,7 +28,6 @@
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
         "plugin:import/typescript",
@@ -49,7 +43,9 @@
             "ignoreRestSiblings": true
           }
         ],
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
       }
     },
     {

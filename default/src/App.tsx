@@ -1,4 +1,3 @@
-import React from 'react';
 import { Global, css } from '@emotion/react';
 import Button from '~/components/Button';
 

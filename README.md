@@ -11,11 +11,6 @@
 - prettier
 - emotion
 
-### new jsx transform
-
-- default
-  - \+ react 17 new jsw transform
-
 ### material-ui
 
 - default
@@ -41,7 +36,6 @@ npm i -g degit
 
 degit yrnana/nana-vite-template/default my-vite-app
 degit yrnana/nana-vite-template/material-ui my-vite-app
-degit yrnana/nana-vite-template/new-jsx-transform my-vite-app
 degit yrnana/nana-vite-template/wo-jest my-vite-app
 degit yrnana/nana-vite-template/tailwindcss my-vite-app
 ```
