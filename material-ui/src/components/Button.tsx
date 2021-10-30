@@ -1,4 +1,4 @@
-import { Button as MuiButton } from '@material-ui/core';
+import { Button as MuiButton } from '@mui/material';
 
 const Button: React.FC = ({ children }) => {
   return (
