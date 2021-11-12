@@ -1,0 +1,51 @@
+{
+  "name": "nana-vite-template",
+  "description": "vite template",
+  "version": "0.0.0",
+  "author": {
+    "name": "nana.na",
+    "url": "https://github.com/yrnana"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yrnana/nana-vite-template.git",
+    "directory": "linaria"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "type-check": "tsc -p tsconfig.json",
+    "format": "prettier --write \"./src/**/*.{js,ts,tsx,scss,json,html}\""
+  },
+  "dependencies": {
+    "@linaria/core": "^3.0.0-beta.13",
+    "@linaria/react": "^3.0.0-beta.13",
+    "@linaria/shaker": "^3.0.0-beta.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@linaria/babel-preset": "^3.0.0-beta.13",
+    "@linaria/rollup": "^3.0.0-beta.13",
+    "@trivago/prettier-plugin-sort-imports": "^3.1.1",
+    "@types/node": "^16.11.7",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "@vitejs/plugin-react": "^1.0.8",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.2.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.14"
+  },
+  "license": "MIT"
+}

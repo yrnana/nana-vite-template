@@ -1,0 +1,52 @@
+{
+  "root": true,
+  "ignorePatterns": ["node_modules"],
+  "overrides": [
+    {
+      "files": ["*.{js,ts}"],
+      "env": {
+        "node": true,
+        "es2021": true
+      },
+      "extends": ["eslint:recommended", "prettier"]
+    },
+    {
+      "files": ["src/**/*.ts?(x)"],
+      "parserOptions": {
+        "ecmaVersion": "latest"
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+      "env": {
+        "browser": true,
+        "es2021": true
+      },
+      "plugins": ["import"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:import/typescript",
+        "plugin:import/react",
+        "plugin:jsx-a11y/recommended",
+        "prettier"
+      ],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "args": "none",
+            "ignoreRestSiblings": true
+          }
+        ],
+        "react/prop-types": "off",
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
+      }
+    }
+  ]
+}
