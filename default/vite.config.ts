@@ -3,7 +3,14 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react({
+      jsxImportSource: '@emotion/react',
+      babel: {
+        plugins: ['@emotion'],
+      },
+    }),
+  ],
   resolve: {
     alias: {
       '~/': `${process.cwd()}/src/`,
@@ -15,9 +22,5 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
-  },
-  esbuild: {
-    jsxFactory: `jsx`,
-    jsxInject: `import { jsx } from '@emotion/react'`,
   },
 });

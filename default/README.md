@@ -50,23 +50,19 @@ const config = {
 
 ### emotion
 
-- `babel.config.json`
-
-```json
-{
-  "presets": ["@emotion/babel-preset-css-prop"]
-}
-```
-
 - `vite.config.ts`
 
 ```ts
 const config = {
   // ...
-  esbuild: {
-    jsxFactory: `jsx`,
-    jsxInject: `import { jsx } from '@emotion/react'`,
-  },
+  plugins: [
+    react({
+      jsxImportSource: '@emotion/react',
+      babel: {
+        plugins: ['@emotion'],
+      },
+    }),
+  ],
 };
 ```
 
