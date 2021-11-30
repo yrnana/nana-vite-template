@@ -18,20 +18,22 @@
       "settings": {
         "react": {
           "version": "detect"
+        },
+        "import/resolver": {
+          "typescript": {}
         }
       },
       "env": {
         "browser": true,
         "es2021": true
       },
-      "plugins": ["import", "@emotion"],
+      "plugins": ["@emotion"],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
-        "plugin:import/typescript",
-        "plugin:import/react",
+        "plugin:import/recommended",
         "plugin:jsx-a11y/recommended",
         "prettier"
       ],
