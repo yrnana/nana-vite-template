@@ -44,6 +44,14 @@
   - \- emotion
   - \+ linaria
 
+### vanilla-extract
+
+- default
+  - \- jest
+  - \- babel
+  - \- emotion
+  - \+ vanilla-extract
+
 ## download template
 
 ```bash
@@ -55,4 +63,5 @@ degit yrnana/nana-vite-template/wo-jest my-vite-app
 degit yrnana/nana-vite-template/tailwindcss my-vite-app
 degit yrnana/nana-vite-template/simple my-vite-app
 degit yrnana/nana-vite-template/linaria my-vite-app
+degit yrnana/nana-vite-template/vanilla-extract my-vite-app
 ```
