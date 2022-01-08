@@ -2,7 +2,6 @@ import { css } from '@emotion/react';
 
 const styles = css`
   padding: 1rem 1.5rem;
-  font-size: 18px;
   border-radius: 10px;
   border: 0;
   background: #000;

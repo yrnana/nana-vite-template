@@ -3,7 +3,6 @@
 exports[`버튼 이전 스냅샷과 일치한다. 1`] = `
 .emotion-0 {
   padding: 1rem 1.5rem;
-  font-size: 18px;
   border-radius: 10px;
   border: 0;
   background: #000;
