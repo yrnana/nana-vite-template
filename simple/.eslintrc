@@ -18,9 +18,6 @@
       "settings": {
         "react": {
           "version": "detect"
-        },
-        "import/resolver": {
-          "typescript": {}
         }
       },
       "env": {
@@ -37,6 +34,7 @@
         "prettier"
       ],
       "rules": {
+        "import/no-unresolved": "off",
         "@typescript-eslint/no-unused-vars": [
           "warn",
           {
