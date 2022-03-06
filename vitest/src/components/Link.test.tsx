@@ -1,30 +1,17 @@
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Link from './Link';
 
-function toJson(component: renderer.ReactTestRenderer) {
-  const result = component.toJSON();
-  expect(result).toBeDefined();
-  expect(result).not.toBeInstanceOf(Array);
-  return result as renderer.ReactTestRendererJSON;
-}
+it('Link changes the class when hovered', () => {
+  const { container } = render(<Link page="http://antfu.me">Anthony Fu</Link>);
 
-test('Link changes the class when hovered', () => {
-  const component = renderer.create(
-    <Link page="http://antfu.me">Anthony Fu</Link>,
-  );
-  let tree = toJson(component);
-  expect(tree).toMatchSnapshot();
+  expect(container).toMatchSnapshot('default');
 
-  // manually trigger the callback
-  tree.props.onMouseEnter();
+  const link = screen.getByRole('link');
 
-  // re-rendering
-  tree = toJson(component);
-  expect(tree).toMatchSnapshot();
+  userEvent.hover(link);
+  expect(container).toMatchSnapshot('hover');
 
-  // manually trigger the callback
-  tree.props.onMouseLeave();
-  // re-rendering
-  tree = toJson(component);
-  expect(tree).toMatchSnapshot();
+  userEvent.unhover(link);
+  expect(container).toMatchSnapshot('unhover');
 });

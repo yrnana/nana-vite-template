@@ -18,7 +18,13 @@ export default defineConfig({
     sourcemap: true,
   },
   test: {
-    global: true,
-    environment: 'happy-dom',
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./src/setupTests.ts'],
+    coverage: {
+      all: true,
+      include: ['src/**/*'],
+      exclude: ['src/setupTests.ts', 'src/**/*.{test,d}.{ts,tsx}'],
+    },
   },
 });
