@@ -1,21 +1,5 @@
 {
   "semi": true,
   "singleQuote": true,
-  "trailingComma": "all",
-  "importOrderSortSpecifiers": true,
-  "importOrderCaseInsensitive": true,
-  "importOrder": [
-    "^react$",
-    "^react-dom$",
-    "^(?![.~]).*(?<!\\.css|\\.scss|\\.png|\\.svg)$",
-    "^~.*(?<!\\.css|\\.scss|\\.png|\\.svg)$",
-    "^\\..*(?<!\\.css|\\.scss|\\.png|\\.svg)$",
-    "^(?![.~]).*(?:\\.css|\\.scss)$",
-    "^~.*(?:\\.css|\\.scss)$",
-    "^\\..*(?:\\.css|\\.scss)$",
-    "^(?![.~]).*",
-    "^~.*",
-    "^\\..*",
-    ".*"
-  ]
+  "trailingComma": "all"
 }

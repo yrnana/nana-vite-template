@@ -1,4 +1,5 @@
 import { CssBaseline } from '@mui/material';
+
 import Button from '~/components/Button';
 
 function App() {

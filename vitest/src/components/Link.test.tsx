@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+
 import Link from './Link';
 
 it('Link changes the class when hovered', () => {
-  const { container } = render(<Link page="http://antfu.me">Anthony Fu</Link>);
+  const { container } = render(<Link page="https://yrnana.dev">Yuri Na</Link>);
 
   expect(container).toMatchSnapshot('default');
 

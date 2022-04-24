@@ -5,7 +5,11 @@ const styles = css`
   font-size: 18px;
 `;
 
-const Button: React.FC = ({ children }) => {
+type ButtonProps = {
+  children?: React.ReactNode;
+};
+
+const Button = ({ children }: ButtonProps) => {
   return <button css={styles}>{children}</button>;
 };
 

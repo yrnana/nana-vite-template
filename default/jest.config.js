@@ -3,7 +3,7 @@ const config = {
   verbose: true,
   testEnvironment: 'jsdom',
   roots: ['<rootDir>/src'],
-  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx'],
   watchPlugins: [
     'jest-watch-typeahead/filename',

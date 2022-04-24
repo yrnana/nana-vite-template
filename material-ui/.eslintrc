@@ -3,12 +3,19 @@
   "ignorePatterns": ["node_modules"],
   "overrides": [
     {
-      "files": ["*.{js,ts}"],
+      "files": ["*.js"],
+      "excludedFiles": ["src/**/*"],
       "env": {
         "node": true,
         "es2021": true
       },
-      "extends": ["eslint:recommended", "prettier"]
+      "plugins": ["simple-import-sort"],
+      "extends": ["eslint:recommended", "prettier"],
+      "rules": {
+        "sort-imports": "off",
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error"
+      }
     },
     {
       "files": ["src/**/*.ts?(x)"],
@@ -24,6 +31,7 @@
         "browser": true,
         "es2021": true
       },
+      "plugins": ["simple-import-sort"],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
@@ -35,6 +43,27 @@
       ],
       "rules": {
         "import/no-unresolved": "off",
+        "sort-imports": "off",
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              ["^\\u0000"],
+              ["^react$", "^react-dom"],
+              ["^@?\\w"],
+              ["^~"],
+              ["^."],
+              [".scss", ".svg", ".png"]
+            ]
+          }
+        ],
+        "simple-import-sort/exports": "error",
+        "@typescript-eslint/no-duplicate-imports": [
+          "error",
+          { "includeExports": true }
+        ],
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/no-unused-vars": [
           "warn",
           {

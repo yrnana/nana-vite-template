@@ -1,6 +1,10 @@
 import * as styles from './Button.css';
 
-const Button: React.FC = ({ children }) => {
+type ButtonProps = {
+  children?: React.ReactNode;
+};
+
+const Button: React.FC<ButtonProps> = ({ children }) => {
   return <button className={styles.button}>{children}</button>;
 };
 

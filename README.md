@@ -65,3 +65,9 @@ degit yrnana/nana-vite-template/simple my-vite-app
 degit yrnana/nana-vite-template/linaria my-vite-app
 degit yrnana/nana-vite-template/vanilla-extract my-vite-app
 ```
+
+## command
+
+```sh
+find . -maxdepth 1 -type d ! -name ".*" -exec yarn --cwd "{}" type-check \;
+```

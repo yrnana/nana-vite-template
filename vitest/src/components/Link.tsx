@@ -5,7 +5,12 @@ const STATUS = {
   NORMAL: 'normal',
 };
 
-const Link: React.FC<{ page: string }> = ({ children, page }) => {
+type LinkProps = {
+  page: string;
+  children?: React.ReactNode;
+};
+
+const Link: React.FC<LinkProps> = ({ children, page }) => {
   const [status, setStatus] = useState(STATUS.NORMAL);
 
   const onMouseEnter = () => {

@@ -4,9 +4,9 @@ exports[`Link changes the class when hovered > default 1`] = `
 <div>
   <a
     class="normal"
-    href="http://antfu.me"
+    href="https://yrnana.dev"
   >
-    Anthony Fu
+    Yuri Na
   </a>
 </div>
 `;
@@ -15,9 +15,9 @@ exports[`Link changes the class when hovered > hover 1`] = `
 <div>
   <a
     class="hovered"
-    href="http://antfu.me"
+    href="https://yrnana.dev"
   >
-    Anthony Fu
+    Yuri Na
   </a>
 </div>
 `;
@@ -26,9 +26,9 @@ exports[`Link changes the class when hovered > unhover 1`] = `
 <div>
   <a
     class="normal"
-    href="http://antfu.me"
+    href="https://yrnana.dev"
   >
-    Anthony Fu
+    Yuri Na
   </a>
 </div>
 `;

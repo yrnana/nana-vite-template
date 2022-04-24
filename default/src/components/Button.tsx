@@ -10,7 +10,11 @@ const styles = css`
   cursor: pointer;
 `;
 
-const Button: React.FC = ({ children }) => {
+type ButtonProps = {
+  children?: React.ReactNode;
+};
+
+const Button: React.FC<ButtonProps> = ({ children }) => {
   return <button css={styles}>{children}</button>;
 };
 
